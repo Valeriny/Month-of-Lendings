@@ -1,0 +1,16 @@
+@use "mixins/reset-settings";
+
+.main {
+  @include reset-settings;
+  margin: 0 auto;
+  padding-left: 120px;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0 18px;
+    max-width: 480px;
+    overflow-x: hidden;
+  }
+}

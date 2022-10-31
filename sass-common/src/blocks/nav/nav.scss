@@ -1,0 +1,92 @@
+@use "mixins/reset-settings";
+@use "variables";
+
+.nav {
+  @include reset-settings;
+  width: 100%;
+  max-height: 74px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $backgroundcolorWhite;
+  z-index: 2;
+
+  &_theme_dark {
+    @include reset-settings;
+    background-color: #333;
+  }
+
+  &__checkbox {
+    @include reset-settings;
+    position: absolute;
+    display: block;
+    height: 19px;
+    width: 22px;
+    top: 25px;
+    right: 15px;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  &__icon {
+    @include reset-settings;
+    display: none;
+    height: 19px;
+    width: 22px;
+    position: relative;
+    margin: 27px 18px 27px auto;
+  }
+
+  &__line {
+    @include reset-settings;
+    display: block;
+    width: 27px;
+    height: 19px;
+
+    & span:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    & span:nth-child(2) {
+      transform: scaleY(0);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    & span:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 10px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__icon {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+
+    & span {
+      display: block;
+      height: 4px;
+      width: 100%;
+      background: #333;
+    }
+  }
+
+  &_theme_dark span {
+    background: #fff;
+  }
+}

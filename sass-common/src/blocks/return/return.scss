@@ -1,0 +1,12 @@
+@keyframes return {
+    from {
+        transform:  translate(0, 130px);
+      }
+      to {
+        transform:  translate(0, 0px);
+      }
+  }
+  
+  .return {
+    animation: return 0.2s linear forwards normal;
+  }

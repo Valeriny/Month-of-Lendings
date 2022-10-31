@@ -1,0 +1,77 @@
+@use "mixins/reset-settings";
+@use "variables";
+
+.card {
+  @include reset-settings;
+  flex: 0 0 33%;
+  max-width: 380px;
+
+  &__name {
+    @include reset-settings;
+    padding-top: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+
+    &_theme_dark {
+      color: #fff;
+    }
+  }
+
+  &__link {
+    @include reset-settings;
+    text-decoration: none;
+  }
+
+  &__img {
+    @include reset-settings;
+    padding: 20px;
+  }
+
+  &__base {
+    @include reset-settings;
+    max-width: 380px;
+    max-height: 380px;
+    background-color: $backgroundcolorWhite;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex: 0 0 100%;
+    align-items: center;
+    min-width: 284px;
+    position: relative;
+
+    &__name {
+      margin: 0 auto;
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      bottom: 16px;
+      padding-top: 0;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+
+      &_theme_dark {
+        color: $fontColorBlack;
+      }
+    }
+
+    &__img {
+      padding: 15px 15px 37px;
+      width: 100%;
+      object-position: center center;
+    }
+
+    &__base {
+      min-width: 284px;
+    }
+  }
+}
