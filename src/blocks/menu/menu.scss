@@ -1,0 +1,43 @@
+@use "mixins/border-box" as *;
+@use "variables" as *;
+
+.menu {
+  @include border-box;
+  margin: 0;
+  padding: 28px 120px 28px 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 34px;
+  justify-content: end;
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+
+  &__link {
+    @include border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: $fontColorBlack;
+    opacity: 100%;
+
+    &:hover {
+      opacity: 75%;
+    }
+
+    &_theme_dark {
+      color: #fff;
+
+      :hover {
+        opacity: 0.65;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}

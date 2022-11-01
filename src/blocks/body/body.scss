@@ -1,0 +1,17 @@
+@use "mixins/border-box" as *;
+@use "variables" as *;
+
+.body {
+  @include border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: $backgroundcolorWhite;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: $fontColorBlack;
+
+  &_theme_dark {
+    background-color: #333;
+    color: #fff;
+  }
+}

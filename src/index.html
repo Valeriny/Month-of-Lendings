@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <title>Month-of-Lendings</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <nav class="nav">
+        <input type="checkbox" name="" id="" class="nav__checkbox">
+        <div class="nav__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="menu__link" href="#coatings-gradients"
+              >Покрытия и&nbsp;градиенты</a
+            >
+          </li>
+          <li>
+            <a class="menu__link" href="#bike">Велосипеды</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#training">Тренировки</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <h1 class="header__title title">
+          Шоссе, ТТ и&nbsp;Грэвел
+        </h1>
+        <div class="header__text">
+          <p class="header__subtitle">
+            Триатлонные старты, горные серпантины или&nbsp;грейвел заезды
+            по&nbsp;живописным маршрутам – нужно только определиться
+            с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.
+          </p>
+          <button class="header__button" type="button">
+            <span class="header__button-text">Подробнее</span>
+          </button>
+        </div>
+        <div class="header__bike">
+          <h3 class="header__bike-name">Cannondale Systemsix</h3>
+          <hr class="header__bike-line" />
+        </div>
+        <div class="header__images">
+        <img src="images/Placeholder.jpg" class="header__img" />
+        <div class="header__bike-fix"></div>
+      </div>
+      </header>
+      <div class="Eddy-Merckx">
+        <hr class="line" />
+        <img
+          src="images/Eddi_Merckx.jpg"
+          class="Eddy-Merckx__img"
+        />
+        <div class="Eddy-Merckx__text">
+          <h2 class="Eddy-Merckx__quote">
+            «Катайся много или&nbsp;мало, долго или&nbsp;коротко,
+            как&nbsp;хочешь - но&nbsp;катайся»
+          </h2>
+          <div class="Eddy-Merckx__profile">
+            <h3 class="Eddy-Merckx__author">Эдди Меркс</h3>
+            <h4 class="Eddy-Merckx__activity">Велогонщик</h4>
+          </div>
+        </div>
+      </div>
+      <section class="slider" id="coatings-gradients">
+        <hr class="line" />
+        <div class="slider__block-mobile">
+        <h2 class="slider__title-view title">Шоссе</h2>
+        <p class="slider__subtitle-view subtitle">
+          На шоссейном велосипеде можно ездить по асфальту на разных градиентах:
+          будь то горы или равнины. Гонки проходят в командном пелотоне, но
+          тренироваться можно и самостоятельно.
+        </p>
+        <div class="slider__container">
+          <div class="slider__container-images" id="slider">
+            <img class="slider__img" src="images/highway.jpg" id=1/>
+            <img class="slider__img" src="images/gravel.jpg" id=2/>
+            <img class="slider__img" src="images/TG.jpg" id=3/>
+          </div>
+          <img class="slider__figure" src="images/figure.png" />
+          <img
+            class="slider__vector"
+            src="images/Vector 1.svg"
+          />
+        </div>
+        <div class="slider__switch">
+          <button
+            class="slider__button slider__button-left"
+          ></button>
+          <button
+            class="slider__button slider__button-right"
+          ></button>
+        </div>
+      </div>
+      </section>
+      <section class="bike" id="bike">
+        <hr class="line" />
+        <div class="bike__info-panel">
+          <h2 class="title">Велосипеды</h2>
+          <ul class="bike__menu">
+            <li
+              class="bike__menu-point bike__menu-point_type_active"
+              id="bike-highway"
+            >
+              Шоссе
+            </li>
+            <li class="bike__menu-point" id="bike-gravel">Грэвел</li>
+            <li class="bike__menu-point" id="bike-TT">TT</li>
+          </ul>
+        </div>
+        <select class="bike__list-type">
+          <option value="highway">Шоссе</option>
+          <option value="gravel">Грэвел</option>
+          <option value="TT">TT</option>
+        </select>
+        <div class="bike__slider-line">
+        <ul class="bike__cards"></ul>
+          </div>
+          <ul class="bike__slider">
+            <li class="bike__slider-indicator bike__slider-indicator_type_active"></li>
+            <li class="bike__slider-indicator"></li>
+            <li class="bike__slider-indicator"></li>
+          </ul>
+        </div>
+
+
+      </section>
+      <section class="training">
+        <hr class="line" />
+        <h2 class="title training__title" id="training">
+          Тренировки
+        </h2>
+        <img src="images/road turn.jpg" class="training__img" />
+        <p class="training__subtitle subtitle">
+          Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+          Komoot, а записать эти тренировки поможет приложение Strava, а также
+          это приложение позволит построить тренировочный план.
+        </p>
+        <div class="training__links">
+          <a href="https://www.strava.com" class="training__link"
+            >Strava</a
+          >
+          <a href="https://www.komoot.com" class="training__link"
+            >Komoot</a
+          >
+        </div>
+      </section>
+      <div class="popup">
+        <ul class="popup__nav">
+          <li><a href="#coatings-gradients" class="popup__link">Покрытия и градиенты</a></li>
+          <li><a href="#bike" class="popup__link">Велосипеды</a></li>
+          <li><a href="#training" class="popup__link">Тренировки</a></li>
+        </ul>
+          <div class="popup__theme">
+          <div class="popup__theme-light"></div>
+          <label class="popup__checkbox">
+            <input type="checkbox" />
+            <span
+              class="popup__switch"
+              data-label-on="On"
+              data-label-off="Off"
+            ></span>
+          </label>
+          <div class="popup__theme-dark"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h3 class="footer__title">Подпишитесь на рассылку —</h3>
+      <div class="footer__form">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Ваш e-mail"
+          value=""
+          required
+          class="footer__form-text"
+        />
+        <button
+          type="submit"
+          class="footer__form-button"
+        >
+          ok
+        </button>
+        <div class="footer__form-sent">Круто!</div>
+      </div>
+      <div class="footer__panel">
+        <h4 class="footer__author">&copy; Road Club 2021</h4>
+        <img
+          src="images/logo-color.png"
+          class="footer__logo-color"
+        />
+        <div class="footer__theme">
+          <div class="footer__theme-light"></div>
+          <label class="footer__checkbox">
+            <input type="checkbox" />
+            <span
+              class="footer__switch"
+              data-label-on="On"
+              data-label-off="Off"
+            ></span>
+          </label>
+          <div class="footer__theme-dark"></div>
+        </div>
+      </div>
+    </footer>
+    <template id="template-bike">
+      <li class="card">
+        <div class="card__base">
+          <a href="#" target="_blank" class="card__link">
+            <img src="#" class="card__img" />
+          </a>
+        </div>
+        <h3 class="card__name"></h3>
+      </li>
+    </template>
+    <script src="index.js"></script>
+  </body>
+</html>
