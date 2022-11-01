@@ -2,7 +2,7 @@
 <p>Сайт создан на основе:
 <ul>
   <li>HTML</li>
-  <li>CSS</li>
+  <li>JavaScript</li>
   <li>SASS</li><br>
   
   <p>Макет:
