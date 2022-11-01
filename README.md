@@ -1,5 +1,4 @@
 # Month-of-Lendings
-<hr>
 <p>Сайт создан на основе:
 <ul>
   <li>HTML</li>
